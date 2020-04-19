@@ -3,8 +3,8 @@ import cv2
 import matplotlib.pyplot as plt 
 from PIL import Image
 
-SHIFT_X = -5
-SHIFT_Y = 10
+SHIFT_X = -10
+SHIFT_Y = 15
 
 
 def shift_img(img, x, y):

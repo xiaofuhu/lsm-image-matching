@@ -7,7 +7,7 @@ IMG_A = "NEW.png"
 IMG_B = "OLD.png"
 WORK = "DONT_TOUCH_ME.png"
 IMG_SIZE = (220, 290)
-EPOCH = 10
+EPOCH = 15
 
 
 def rgb2gray(rgb):
@@ -67,7 +67,7 @@ if __name__ == "__main__":
     for i in range(EPOCH):
         result = iterate(WORK, IMG_B)
         print((int(result[0]), int(result[1])))
-        tmp = shift_img(load_from_work(), int(result[0] * 20), int(result[1] * 20))
+        tmp = shift_img(load_from_work(), int(result[0] * 30), int(result[1] * 30))
         plt.imshow(tmp)
         plt.show()
         save_to_work(tmp)
