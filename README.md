@@ -6,7 +6,7 @@ We have implemented LSM image matching in Python using image and matrix manipula
 
 ![eqt img](https://github.com/xiaofuhu/lsm-image-matching/blob/master/96c325c6db11ddb40d09516d4681362.jpg)
 
-The algorithm above is used in the program and takes for reference a lecture taught by Professor Cyrill Stachniss at the University of Bonn, Germany in the summer term 2015 <[Lecture](https://www.youtube.com/watch?v=JI4QhY8YXAI) Page 30>. For simplicity, we assume there is no noise in images.
+The algorithm above is used in the program and takes for reference a lecture taught by Professor Cyrill Stachniss at the University of Bonn, Germany in the summer term 2015 <[Lecture](https://www.youtube.com/watch?v=JI4QhY8YXAI) Page 30>. For simplicity, we assume there is no noise in images. i.e. The v term is the zero vector.
 
 ## Run
 Make sure the original image is named "OLD.png", the distorted image "NEW.png", and run with
