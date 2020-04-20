@@ -1,4 +1,4 @@
-# lsm-image-matching
+# Least Squares Matching
 *This repository is related to a MATH 214 class project at the University of Michigan: Linear Algebra and Least Squares Matching*
 
 ## Description
