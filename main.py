@@ -1,3 +1,5 @@
+# Copyright 2020, Fuhu Xiao, All rights reserved.
+
 import numpy as np 
 import matplotlib.pyplot as plt 
 import matplotlib.image as mpimg
@@ -7,7 +9,7 @@ IMG_A = "NEW.png"
 IMG_B = "OLD.png"
 WORK = "DONT_TOUCH_ME.png"
 IMG_SIZE = (220, 290)
-EPOCH = 15
+EPOCH = 10
 
 
 def rgb2gray(rgb):
@@ -67,7 +69,7 @@ if __name__ == "__main__":
     for i in range(EPOCH):
         result = iterate(WORK, IMG_B)
         print((int(result[0]), int(result[1])))
-        tmp = shift_img(load_from_work(), int(result[0] * 30), int(result[1] * 30))
+        tmp = shift_img(load_from_work(), int(result[0] * 15), int(result[1] * 15))
         plt.imshow(tmp)
         plt.show()
         save_to_work(tmp)
